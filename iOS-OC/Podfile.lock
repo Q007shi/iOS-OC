@@ -1,0 +1,40 @@
+PODS:
+  - FCCategoryOCKit (0.1.14)
+  - FDFullscreenPopGesture (1.1)
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
+  - TBBaseKit (0.0.26):
+    - FCCategoryOCKit
+    - FDFullscreenPopGesture
+    - Masonry
+    - SVProgressHUD
+
+DEPENDENCIES:
+  - TBBaseKit (from `https://gitee.com/tb-ios/TBBaseKit.git`)
+
+SPEC REPOS:
+  trunk:
+    - FCCategoryOCKit
+    - FDFullscreenPopGesture
+    - Masonry
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  TBBaseKit:
+    :git: https://gitee.com/tb-ios/TBBaseKit.git
+
+CHECKOUT OPTIONS:
+  TBBaseKit:
+    :commit: a7789e380332261c8866d2e50b382bf387fbad0c
+    :git: https://gitee.com/tb-ios/TBBaseKit.git
+
+SPEC CHECKSUMS:
+  FCCategoryOCKit: 833269ab758137b16364b812a99008f384ce2eac
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TBBaseKit: a6295e38a3edb241f8f6c74f6a44f4804396bb4e
+
+PODFILE CHECKSUM: b15489691a0b8ba90a1466ee1ae470df08b6c674
+
+COCOAPODS: 1.8.4

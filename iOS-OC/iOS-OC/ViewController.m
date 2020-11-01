@@ -11,6 +11,8 @@
 //
 #import "WKProcessPool+FCShare.h"
 
+#import "ViewController1.h"
+
 @interface ViewController ()<WKScriptMessageHandler,WKNavigationDelegate,WKUIDelegate>
 
 /** <#aaa#> */
@@ -41,6 +43,13 @@
     NSString *htmlString = [[NSString alloc]initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     //加载本地html文件
     [_webView loadHTMLString:htmlString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Push" style:UIBarButtonItemStylePlain target:self action:@selector(_pushAction)];;
+}
+
+- (void)_pushAction{
+    ViewController1 *vc = ViewController1.new;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
